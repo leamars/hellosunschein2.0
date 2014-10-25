@@ -1,0 +1,119 @@
+body {
+	font-family: 'Lato', sans-serif;
+	color: 'Red';
+	font-weight: 300;
+	color: #5C5C5C;
+}
+
+h1 {
+	font-size: 55pt;
+	font-weight: 300;
+}
+
+.headertitle {
+	display: inline-block;
+	margin-top: 150pt;
+	text-align: center;
+}
+
+.aqua {
+	color: #2CC5C9;
+}
+
+.yellow {
+	color: #F7D00B;
+}
+
+.logo {
+	width: 70pt;
+	margin-left:7pt;
+}
+
+.navbar {
+	text-align: center;
+	display: none;
+}
+
+.navbar ul {
+	list-style-type: none;
+}
+
+.navbar li, a {
+	display: inline;
+	color: #5C5C5C;
+	font-weight: 200;
+	font-size: 15pt;
+	margin-right: 10px;
+}
+
+.navbar li a:hover {
+	color: #5C5C5C;
+	font-weight: 300;
+}
+
+.socialmedia {
+	text-align: center;
+	margin-top:100pt;
+	display: none; 
+}
+
+.socialmedia i {
+	font-size: 2em;
+	color: #A2A2A2;
+}
+
+.socialmedia i:hover {
+	color: #5C5C5C;
+}
+
+// typed
+
+.wrap{
+	max-width: 200px;
+	margin-left: 300pt;
+}
+
+#typed {
+	font-size: 20px;
+	font-weight: 100;
+}
+
+// mediaqueries
+
+@media only screen and (max-width: 1024px) {
+
+	.headertitle h1 {
+		font-size: 40pt;
+	}
+
+	.logo {
+		width: 40pt;
+	}
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1000px) {
+
+	.headertitle h1 {
+		font-size: 30pt;
+	}
+
+	.logo {
+		width: 30pt;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 549px) {
+
+	.headertitle h1 {
+		font-size: 20pt;
+	}
+
+	.logo {
+		width: 20pt;
+	}
+}
+
+
+
+
+
