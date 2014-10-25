@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hellosunschein.</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="fonts/foundation-icons/foundation-icons.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+
+    <div class="navbar">
+      <ul>
+        <li><a href="#work">WORK</a> | </li>
+        <li><a href="#resources">RESOURCES</a> | </li>
+        <li><a href="#about">ABOUT</a></li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns headertitle">
+        <h1 class="aqua animated flipInX">H E L L <img class="logo" src="assets/img/logo_color.png" /> <span class="yellow">S U N S C H E I N</span></h1>
+      </div>
+    </div>
+
+    <div class="row wrap">
+      <div class="large-1 columns"></div>
+      <div class="large-5 large-offset-6 columns"> <span id="typed" style="white-space:pre;"></span></div>       
+    </div>
+
+    <div class="row socialmedia">
+      <div class="large-6 large-centered columns">
+        <a href="https://twitter.com/hellosunschein"><i class="fi-social-twitter"> </i></a>
+        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><i class="fi-mail"> </i></a>
+        <a href="https://github.com/leamars"><i class="fi-social-github"> </i></a>
+        <a href="http://si.linkedin.com/in/leamarolt"><i class="fi-social-linkedin"> </i></a>
+        <a href="http://neparlepasraison.tumblr.com/"><i class="fi-social-tumblr"> </i></a>
+        </div>
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+        <script src="js/vendor/typed.js" type="text/javascript"></script>
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            strings: ["Hey. I'm Lea. \nI bring ideas to life. \n& listen to fabulous music while I do it."],
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: false,
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){
+      //$(".wrap").css("margin-bottom", "100pt"); 
+      $(".socialmedia").fadeIn().css("display", "block");
+      $(".socialmedia").css("text-align", "center");
+      console.log("lea is awesome");
+    }
+
+    </script>
+  </body>
+</html>
