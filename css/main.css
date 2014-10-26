@@ -2,12 +2,28 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: 'Red';
 	font-weight: 300;
-	color: #5C5C5C;
 }
 
 h1 {
 	font-size: 55pt;
 	font-weight: 300;
+}
+
+#projectSquare {
+    width: 200px;
+    height: 200px;
+    color: white;
+    margin: 0 auto;
+    font-family: 'Lobster', serif;
+    font-size: 20pt;
+    text-align: center;
+}
+
+#wrap {
+    max-width: 300px;
+    height: 100px;
+    color: #5C5C5C;
+    margin: 0 auto;
 }
 
 .headertitle {
@@ -29,36 +45,13 @@ h1 {
 	margin-left:7pt;
 }
 
-.navbar {
-	text-align: center;
-	display: none;
-}
-
-.navbar ul {
-	list-style-type: none;
-}
-
-.navbar li, a {
-	display: inline;
-	color: #5C5C5C;
-	font-weight: 200;
-	font-size: 15pt;
-	margin-right: 10px;
-}
-
-.navbar li a:hover {
-	color: #5C5C5C;
-	font-weight: 300;
-}
-
 .socialmedia {
 	text-align: center;
-	margin-top:100pt;
-	display: none; 
+	display:none;
 }
 
 .socialmedia i {
-	font-size: 2em;
+	font-size: 4em;
 	color: #A2A2A2;
 }
 
@@ -66,16 +59,66 @@ h1 {
 	color: #5C5C5C;
 }
 
-// typed
-
-.wrap{
-	max-width: 200px;
-	margin-left: 300pt;
+.headerTitle {
+	text-align: center;
+	margin-top: 20pt;
+	margin-bottom: 20pt;
+	font-size: 40pt;
+	font-family: "Lobster", serif;
+	color: white;
+	cursor: pointer;
 }
+
+.resources {
+	color:white;
+	font-weight: 400;
+	text-align: center;
+	font-family: "Lobster", serif;
+	font-size: 20pt;
+}
+
+ul.resources li, a {
+	font-family: "Lato";
+	text-align: left;
+	font-size: 10pt;
+	font-weight: 200;
+	color:#196E70;
+	list-style-type: disc;
+}
+
+ul.resources a {
+	font-weight: 300;
+}
+
+ul.resources li a:hover {
+	color:white;
+}
+
+// typed
 
 #typed {
 	font-size: 20px;
 	font-weight: 100;
+}
+
+.projects {
+	margin-top:10pt;
+}
+
+.wideContentBox {
+	height:100%;
+}
+
+.content {
+	display:none;
+}
+
+#footer {
+	background-color:white;
+}
+
+.sticky {
+	background-color:white;
 }
 
 // mediaqueries
@@ -100,6 +143,7 @@ h1 {
 	.logo {
 		width: 30pt;
 	}
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 549px) {
@@ -112,8 +156,6 @@ h1 {
 		width: 20pt;
 	}
 }
-
-
 
 
 
