@@ -227,6 +227,16 @@ ul.resources li a:hover {
 	font-style: italic;
 }
 
+.8tracks {
+		width:512px;
+		height:256px;
+}
+
+.youtube {
+		width:512;
+		height:256;
+}
+
 // mediaqueries
 
 @media only screen and (max-width: 1024px) {
@@ -250,6 +260,15 @@ ul.resources li a:hover {
 		width: 30pt;
 	}
 
+	.8tracks {
+		width:256px;
+		height:128px;
+	}
+
+	.youtube {
+		display: none;
+	}
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 549px) {
@@ -260,6 +279,15 @@ ul.resources li a:hover {
 
 	.logo {
 		width: 20pt;
+	}
+
+	.8tracks {
+		width:128px;
+		height:64px;
+	}
+
+	.youtube {
+		display: none;
 	}
 }
 
