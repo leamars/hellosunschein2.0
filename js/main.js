@@ -13,9 +13,4 @@ $(document).ready(function() {
 
 	});
 
-	$('.bod').waypoint(function() {
-  		$(".socialmedia").fadeIn().css("display", "block");
-      	$(".socialmedia").css("text-align", "center");
-	});
-
 });
