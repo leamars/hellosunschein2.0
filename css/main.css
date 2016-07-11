@@ -1,3 +1,59 @@
+/**********************
+
+Nav & Structure
+
+**********************/
+
+.main-nav {
+	margin-top:0;
+	background-color: white;
+	width:100%;
+	z-index: 100;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+/*ul.menu {
+	margin: auto;
+	text-align: center;
+}
+*/
+ul.menu > li {
+	display: inline;
+	color: #969696;
+	font-size: 1em;
+	list-style-type: none;
+}
+
+ul.menu > li > ul {
+	display: inline;
+/*	margin-right: 0;
+	margin-left: 0;*/
+}
+
+ul#word-menu > li {
+	display:inline;
+	color: #969696;
+	font-size: 1.5em;
+	list-style-type: none;
+	margin-right: 20pt;	
+}
+
+ul#image-menu > li {
+	display:inline;
+	color: #969696;
+	font-size: 1.5em;
+	list-style-type: none;
+	margin-left: 0pt;
+	margin-right: 20pt;
+}
+
+/**********************
+
+Main
+
+**********************/
+
 body {
 	font-family: 'Lato', sans-serif;
 	color: 'Red';
@@ -28,7 +84,8 @@ h1 {
 
 .headertitle {
 	display: inline-block;
-	margin-top: 20pt;
+	margin-top: 150pt;
+	margin-bottom: 150pt;
 	text-align: center;
 	color:white;
 }
@@ -48,7 +105,6 @@ h1 {
 
 .social {
 	text-align: center;
-	padding-top: 200px;
 }
 
 .social a {
@@ -101,7 +157,11 @@ ul.resources li a:hover {
 	color:white;
 }
 
-// typed
+/**********************
+
+Typed.js
+
+**********************/
 
 #typed {
 	font-size: 20px;
@@ -237,7 +297,11 @@ ul.resources li a:hover {
 		height:256;
 }
 
-// mediaqueries
+/**********************
+
+Mediaqueries
+
+**********************/
 
 @media only screen and (max-width: 1024px) {
 
@@ -251,6 +315,10 @@ ul.resources li a:hover {
 }
 
 @media only screen and (min-width: 550px) and (max-width: 1000px) {
+
+	ul.menu > li {
+		display: inline;
+	}
 
 	.headertitle h1 {
 		font-size: 30pt;
@@ -272,6 +340,10 @@ ul.resources li a:hover {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 549px) {
+
+	ul.menu > li {
+		display: block;
+	}
 
 	.headertitle h1 {
 		font-size: 20pt;
