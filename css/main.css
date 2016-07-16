@@ -5,12 +5,13 @@ Nav & Structure
 **********************/
 
 .main-nav {
+	position:fixed;
+	top:0;
 	margin-top:0;
-	background-color: white;
+	background-color: rgba(255, 255, 255, .8);
 	width:100%;
 	z-index: 100;
-	padding-top:20px;
-	padding-bottom:20px;
+	padding-top:10px;
 }
 
 /*ul.menu {
@@ -33,20 +34,38 @@ ul.menu > li > ul {
 
 ul#word-menu > li {
 	display:inline;
-	color: #969696;
-	font-size: 1.5em;
+	color: rgb(80, 80, 80);
+	font-size: 1.3em;
 	list-style-type: none;
 	margin-right: 20pt;	
 }
 
+ul#word-menu > li a {
+	color: rgb(80, 80, 80);
+	text-decoration: none;
+}
+
+ul#word-menu > li a:hover {
+	color: rgb(255, 50, 200);
+}
+
 ul#image-menu > li {
 	display:inline;
-	color: #969696;
-	font-size: 1.5em;
+}
+
+ul#image-menu > li a {
+	color: rgb(80, 80, 80);
+	font-size: 1.7em;
 	list-style-type: none;
 	margin-left: 0pt;
 	margin-right: 20pt;
+	color: rgb(80, 80, 80);
 }
+
+ul#image-menu > li a:hover {
+	color: rgb(255, 50, 200);
+}
+
 
 /**********************
 
@@ -65,14 +84,117 @@ h1 {
 	font-weight: 300;
 }
 
-#projectSquare {
-    width: 200px;
-    height: 200px;
+.card {
+	border-color: purple;
+	border-radius: 0px;
+	margin:0px;
+	padding:0px;
+	text-align: center;
+}
+
+.card-columns {
+	margin:0px;
+	padding:0px;
+}
+
+.leaRow {
+	maring:0px;
+	margin-left:7px;
+	padding:0px;
+	padding-top:700px;
+	border-style:none;
+}
+
+.leaBox {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	maring:0px;
+	margin-left: -4px;
+	padding: 0px;
+	background-color: yellow;
+	display: inline-block;
+	text-align: center;
+	border-style: solid;
+    border-color: white;
+    border-width: 20px;
+}
+
+.leaRow > .leaBox:nth-child(1) {
+	background-image: url("../plc/1.png"); 
+}
+
+.leaRow > .leaBox:nth-child(2) {
+	background-image: url("../plc/2.png"); 
+}
+
+.leaRow > .leaBox:nth-child(3) {
+	background-image: url("../plc/3.png"); 
+}
+
+.leaRow > .leaBox:nth-child(4) {
+	background-image: url("../plc/4.png"); 
+}
+
+.leaRow > .leaBox:nth-child(5) {
+	background-image: url("../plc/5.png"); 
+}
+
+.leaRow > .leaBox:nth-child(6) {
+	background-image: url("../plc/6.png"); 
+}
+
+.leaRow > .leaBox:nth-child(7) {
+	background-image: url("../plc/7.png"); 
+}
+
+.leaRow > .leaBox:nth-child(8) {
+	background-image: url("../plc/8.png"); 
+}
+
+.leaRow > .leaBox:nth-child(9) {
+	background-image: url("../plc/9.png"); 
+}
+
+.leaRow > .leaBox:nth-child(10) {
+	background-image: url("../plc/10.png"); 
+}
+
+.leaRow > .leaBox:nth-child(11) {
+	background-image: url("../plc/11.png"); 
+}
+
+.leaRow > .leaBox:nth-child(12) {
+	background-image: url("../plc/12.png"); 
+}
+
+.leaRow > .leaBox:nth-child(13) {
+	background-image: url("../plc/13.png"); 
+}
+
+.leaRow > .leaBox:nth-child(14) {
+	background-image: url("../plc/14.png"); 
+}
+
+.leaRow > .leaBox:nth-child(15) {
+	background-image: url("../plc/15.png"); 
+}
+
+.leaBox:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	border-style: solid;
+    border-color: rgb(255, 50, 200);
+    border-width: 20px;
+}
+
+.projectSquare {
+    height: 225px;
     color: white;
-    margin: 0 auto;
-    font-family: 'Lobster', serif;
-    font-size: 20pt;
+    background-color: red;
     text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
 }
 
 #wrap {
@@ -103,7 +225,7 @@ h1 {
 	margin-left:7pt;
 }
 
-.social {
+/*.social {
 	text-align: center;
 }
 
@@ -118,7 +240,7 @@ h1 {
 
 .social a:hover .yel {
 	color: #D2B109;
-}
+}*/
 
 .headerTitle {
 	text-align: center;
@@ -139,7 +261,7 @@ h1 {
 	font-style: italic;
 }
 
-ul.resources li, a {
+/*ul.resources li, a {
 	font-family: "Lato";
 	text-align: left;
 	font-size: 10pt;
@@ -155,7 +277,7 @@ ul.resources a {
 
 ul.resources li a:hover {
 	color:white;
-}
+}*/
 
 /**********************
 
